@@ -1,0 +1,46 @@
+        #include <stdio.h>
+
+        int main() {
+
+            //indentificando variaveis
+
+            int populacao;
+            int area;
+            int pib;
+            int turisticos;
+            char nome[50];
+
+            //identificando entradas (printf) e saidas (scanf)
+
+            printf("Digite o nome da cidade: \n");
+            scanf("%s", &nome);
+
+            printf("Digite o numero de habitantes da cidade: \n");
+            scanf("%d", &populacao);
+
+            printf("Digite o PIB da cidade: \n");
+            scanf("%d", &pib);
+
+            printf("Digite o numero de pontos turisticos da cidade: \n");
+            scanf("%d", &turisticos);
+
+            printf("Digite a área da cidade: \n");
+            scanf("%d", &area);
+
+            //exibir resultado da carta
+
+            printf("Desafio Super Trunfo\n");
+            printf("Nome da cidade: %s\n", nome);
+            printf("Numero de Habitantes: %d\n", populacao);
+            printf("PIB: %d\n", pib);
+            printf("Numero de pontos turisticos: %d\n", turisticos);
+            printf("Área em km²: %d km²\n", area);
+
+            return 0;
+
+
+
+
+
+
+        }
