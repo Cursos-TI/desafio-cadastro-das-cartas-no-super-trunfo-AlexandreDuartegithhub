@@ -1,22 +1,66 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+    int main() {
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+        //indentificando variaveis
 
-    return 0;
+        int populacao;
+        int area;
+        float pib;
+        int turisticos;
+        char nome[50];
+        char estado[50];
+        char codigo[50];
+        int densidade;
+        int percapita;
+
+
+        //identificando entradas (printf) e saidas (scanf)
+
+        printf("Digite o nome da cidade: \n");
+        scanf("%s", &nome);
+
+        printf("Digite o nome do estado: \n");
+        scanf("%s", &estado);
+
+        printf("Digite o código da carta: \n");
+        scanf("%s", &codigo);
+
+        printf("Digite o numero de habitantes da cidade: \n");
+        scanf("%d", &populacao);
+
+        printf("Digite o PIB da cidade: \n");
+        scanf("%f", &pib);
+
+        printf("Digite o numero de pontos turisticos da cidade: \n");
+        scanf("%d", &turisticos);
+
+        printf("Digite a área da cidade: \n");
+        scanf("%d", &area);
+
+        densidade = populacao % area;
+
+        percapita = pib % populacao;
+
+        //exibir resultado da carta
+
+        printf("Desafio Super Trunfo\n");
+        printf("CARTA NUMERO 01!\n");
+        printf("Nome do Estado; %s\n", estado);
+        printf("Numero do código da carta: %s\n", codigo);
+        printf("Nome da cidade: %s\n", nome);
+        printf("Numero de Habitantes: %d\n", populacao);
+        printf("PIB: %f\n", pib);
+        printf("Numero de pontos turisticos: %d\n", turisticos);
+        printf("Área em km²: %d km²\n", area);
+        printf("Dencidade populacional: %dhab/km²\n", densidade);
+        printf("PIB per capita: %d\n", percapita);
+
+        return 0;
+
+
+
+
+
+
 }
