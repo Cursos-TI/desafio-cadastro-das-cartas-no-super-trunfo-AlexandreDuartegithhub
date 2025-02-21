@@ -72,11 +72,11 @@
             printf("Digite o nome da cidade: \n");
             scanf("%s", &nome2);
 
+            printf("Digite o código da carta: \n");
+            scanf("%s", &codigo2 );
+            
             printf("Digite o nome do estado: \n");
             scanf("%s", &estado2);
-
-            printf("Digite o código da carta: \n");
-            scanf("%s", &codigo2);
 
             printf("Digite o numero de habitantes da cidade: \n");
             scanf("%d", &populacao2);
@@ -109,9 +109,9 @@
             printf("PIB per capita: %d\n", percapita2);
 
                 if(percapita2 > percapita){
-                    printf("A carta 02 venceu!");
+                    printf("A carta 02 venceu!\n");
                 } else{
-                    printf("A carta 01 venceu!");
+                    printf("A carta 01 venceu!\n");
                 }
 
 
